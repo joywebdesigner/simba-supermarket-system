@@ -1,0 +1,115 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN CONTAINER */
+.login-container {
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+}
+
+/* LOGIN CARD */
+.login-card {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* TITLE */
+.login-card h2 {
+    margin-bottom: 6px;
+    color: #1e3c72;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 22px;
+}
+
+/* INPUTS */
+.login-card input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-card input:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 6px rgba(42,82,152,0.3);
+}
+
+/* BUTTON */
+.login-card button {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(42,82,152,0.4);
+}
+
+/* ERROR MESSAGE */
+.error {
+    background: #ffe3e3;
+    color: #b30000;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+/* FORGOT PASSWORD */
+.forgot 
+    margin-top: 18px;
+    font-size: 13px;
+    color: #555;
+}
+
+.forgot span {
+    color: #1e3c72;
+    font-weight: 500;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
